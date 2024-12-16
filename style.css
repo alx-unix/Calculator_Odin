@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 500px;
+    height: 720px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.screen{
+    width: 450px;
+    height: 130px;
+    background-color: rgb(129, 192, 255);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 3rem;
+}
+
+.buttons{
+    width: 450px;
+    height: 500px;
+    background-color:aliceblue;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row{
+    width: 100%;
+    height: 1/5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+
+    border: 2px solid rgb(0, 160, 147);
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    &:hover{
+        background-color:rgb(29, 29, 97);
+        color: white;
+        transform: perspective(1.2);
+        transition: 100ms ease-out;
+        cursor: pointer;
+        box-shadow: 10px 5px 5px #333;
+    }
+}
+
+.delete, .clear{
+    border: 2px solid rgb(0, 160, 147);
+    padding: 0.75rem 3rem;
+    border-radius: 1rem;
+    &:hover{
+        background-color: rgb(29, 29, 97);
+        color: white;
+        transform: perspective(1.2);
+        transition: 150ms ease-out; 
+        cursor: pointer; 
+    }
+}
+
+.screen-span{
+    margin-right: 1rem;
+}
