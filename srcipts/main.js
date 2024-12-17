@@ -5,19 +5,22 @@ const display1 = document.querySelector(".screen-div1");
 const buttons = document.querySelectorAll(".number");
 const operations = document.querySelectorAll(".oper");
 const egal = document.querySelector(".equal")
+const point = document.querySelector(".point")
 
-console.log(buttons)
-console.log(operations)
+
 
 
 
 
 for (let i=0; i<buttons.length; i++){
     buttons[i].addEventListener('click',()=>{
+
         if (display2.textContent == 0){
-            display2.textContent = buttons[i].textContent
+            display2.textContent = buttons[i].textContent;
+        }else if (display2.textContent.length < 11){
+            display2.textContent += buttons[i].textContent;
         }else{
-            display2.textContent += buttons[i].textContent
+            alert("What kind of number u calculating you fucking animal")
         }
     })
 }
@@ -25,7 +28,7 @@ for (let i=0; i<buttons.length; i++){
 for (let i=0; i<operations.length; i++){
     operations[i].addEventListener('click',()=>{
         if (display2.textContent == 0){
-            alert('Nothing there mate')
+            alert('Nothing there mate');
         }else if(!display1.textContent){
             const num1 = display2.textContent
             display1.textContent = num1 + operations[i].textContent
@@ -74,6 +77,8 @@ for (let i=0; i<operations.length; i++){
             
     })
 }
+
+
 
 
 

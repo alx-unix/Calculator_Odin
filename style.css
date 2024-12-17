@@ -91,4 +91,5 @@ body{
     margin-right: 3rem;
     padding: 0;
     margin-bottom: 1.2rem;
+    min-height: 35px;
 }
